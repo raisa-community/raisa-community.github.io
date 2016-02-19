@@ -1,0 +1,30 @@
+baseurl = "http://raisa-community.github.io/"
+languageCode = "ru-ru"
+title = "RAISA"
+theme = "raisa"
+copyright = "Копирайт (c) 2013-2016, RAISA"
+
+[[menu.main]]
+name = "Домой"
+weight = 1
+identifier = "index"
+url = "/"
+[[menu.main]]
+name = "ЧаВо"
+weight = 3
+url = "/faq"
+[[menu.main]]
+name = "Курс молодого бойца"
+weight = 3
+url = "/quickstart"
+[[menu.main]]
+name = "Фиты"
+weight = 4
+url = "/fits"
+
+
+[params]
+description = "Вторжения Sansha для чайников и не только."
+useNavLogo = true
+navLogoUrl = "/raisa-logo.png"
+noCategoryLink = true

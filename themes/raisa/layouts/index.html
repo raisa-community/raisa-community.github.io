@@ -1,0 +1,22 @@
+{{ $baseUrl := .Site.BaseURL }}
+{{ partial "header.html" . }}
+
+<main role="main">
+
+{{ range where .Site.Pages "Title" "_index" }}
+	<div class="row doc-main">
+		{{ .Content }}
+	</div>
+{{ end }}
+
+{{ if isset .Site.Params "withSitePosts" }}
+<hr />
+
+<div class="row doc-main text-center">
+	<a href="{{ $baseUrl }}/post">See posts for {{ .Site.Title }}</a>
+</div>
+{{ end }}
+
+</main>
+
+{{ partial "footer.html" . }}
